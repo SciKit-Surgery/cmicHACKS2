@@ -1,0 +1,8 @@
+# Ignored files and directories
+
+## pycharm project path
+.idea
+
+## ignores temporal files
+**/*.swp
+
