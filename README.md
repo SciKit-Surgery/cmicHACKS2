@@ -1,11 +1,7 @@
 ## Hacking Real-time AI workflows for Surgery 
-Hackathon hosted by CMIC 
-https://cmic-ucl.github.io/CMICHACKS/ 
-
-## Organisers 
-UCL: Zhehua Mao and Miguel Xochicale   
-NVIDIA: Mikael Brudfors    
-Contributors UCL: Steve Thompson, Tom Dowrick, Sophia Bano, Matt Clarkson    
+Hackathon hosted by CMIC    
+9-10th November 2023    
+https://cmic-ucl.github.io/CMICHACKS/    
 
 ## Project description
 Artificial Intelligence (AI)-based surgical workflows have been used input from multiple sources of data (e.g., medical devices, trackers, robots, cameras, etc) with different Machine Learning and Deep Learning tasks (e.g., classification, segmentation, synthesis, etc) and been applied across different surgical and acquisition workflows. 
@@ -13,9 +9,11 @@ However, the diversity of source of data, pre-processing methods, training and i
 Hence, in this hackathon, instructors aim to engage with participants to bring two learning outcomes: (a) participants will learn to train, validate and deploy AI algorithms for detection and tool tracking, and (b) participants will learn good software practices to contribute to our open-source projects aligning with medical device software standard (IEC 62304), learning faster development, integration and hopefully to sparking future collaborations. 
 We hope to bring together researchers, engineers and clinicians across different departments to hack workflows for real-time AI for Surgery (development, evaluation and integration). 
 
+## Project leaders and organisers 
+Leaders: Zhehua Mao and Miguel Xochicale    
+Contributors: Steve Thompson, Tom Dowrick, Sophia Bano, Matt Clarkson at UCL; and Mikael Brudfors at NVIDIA
 
-## Agenda
-
+## Agenda 
 ### Thursday 9th Nov 2023 
 | Time  | Activity |
 | --- | --- |
@@ -51,4 +49,3 @@ The venue of the hackathon is Jeffery (Thursday) and Elvin (Friday) rooms, Level
 ## Forum
 We are using Discussions as a place to connect with other members of our community. 
 https://github.com/SciKit-Surgery/cmicHACKS2/discussions/
-
