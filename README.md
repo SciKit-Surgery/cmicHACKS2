@@ -4,9 +4,9 @@ Hackathon hosted by CMIC
 https://cmic-ucl.github.io/CMICHACKS/    
 
 ## Project description
-Artificial Intelligence (AI)-based surgical workflows have been used input from multiple sources of data (e.g., medical devices, trackers, robots, cameras, etc) with different Machine Learning and Deep Learning tasks (e.g., classification, segmentation, synthesis, etc) and been applied across different surgical and acquisition workflows. 
-However, the diversity of source of data, pre-processing methods, training and inference methods make a challenging scenario for low-latency applications in surgery. 
-Hence, in this hackathon, instructors aim to engage with participants to bring two learning outcomes: (a) participants will learn to train, validate and deploy AI algorithms for detection and tool tracking, and (b) participants will learn good software practices to contribute to our open-source projects aligning with medical device software standard (IEC 62304), learning faster development, integration and hopefully to sparking future collaborations. 
+Artificial Intelligence (AI)-based surgical workflows use input from multiple sources of data (e.g., medical devices, trackers, robots, cameras, etc) with different Machine Learning and Deep Learning tasks (e.g., classification, segmentation, synthesis, etc) and have been applied across different surgical and acquisition workflows.
+However, the diversity of data sources, pre-processing methods, training and inference methods make a challenging scenario for low-latency applications in surgery.
+Hence, in this hackathon, instructors aim to engage with participants to bring two learning outcomes: (a) participants will learn to train, validate and deploy AI algorithms for detection and tool tracking, and (b) participants will learn good software practices to contribute to our open-source projects aligning with medical device software standard (IEC 62304), learning faster development, integration and hopefully to sparking future collaborations.
 We hope to bring together researchers, engineers and clinicians across different departments to hack workflows for real-time AI for Surgery (development, evaluation and integration). 
 
 ## Project leaders and organisers 
