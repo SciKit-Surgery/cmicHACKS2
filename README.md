@@ -15,7 +15,7 @@ We hope to bring together researchers, engineers and clinicians across different
 
 
 ## :sparkles: Project leaders and organisers 
-Leaders: Zhehua Mao and Miguel Xochicale    
+Leaders: [Zhehua Mao](https://github.com/ZH-Mao) and [Miguel Xochicale](https://github.com/mxochicale)    
 Co-organisers: Steve Thompson, Tom Dowrick, Sophia Bano, Matt Clarkson at UCL; and Mikael Brudfors at NVIDIA
 
 ## :date: Agenda
