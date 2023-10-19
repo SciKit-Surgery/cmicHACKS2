@@ -1,9 +1,9 @@
-## Hacking Real-time AI workflows for Surgery 
+## :nut_and_bolt: Hacking Real-time AI workflows for Surgery 
 Hackathon hosted by CMIC    
 9-10th November 2023    
 https://cmic-ucl.github.io/CMICHACKS/    
 
-## Project description
+## :scroll: Project description
 Artificial Intelligence (AI)-based surgical workflows use input from multiple sources of data (e.g., medical devices, trackers, robots, cameras, etc) with different Machine Learning and Deep Learning tasks (e.g., classification, segmentation, synthesis, etc) and have been applied across different surgical and acquisition workflows.
 However, the diversity of data sources, pre-processing methods, training and inference methods make a challenging scenario for low-latency applications in surgery.
 Hence, in this hackathon, instructors aim to engage with participants to bring two learning outcomes: 
@@ -11,11 +11,11 @@ Hence, in this hackathon, instructors aim to engage with participants to bring t
 (b) participants will learn good software practices to contribute to our open-source projects aligning with medical device software standard (IEC 62304), learning faster development, integration and hopefully to sparking future collaborations.
 We hope to bring together researchers, engineers and clinicians across different departments to hack workflows for real-time AI for Surgery (development, evaluation and integration). 
 
-## Project leaders and organisers 
+## :sparkles: Project leaders and organisers 
 Leaders: Zhehua Mao and Miguel Xochicale    
 Co-organisers: Steve Thompson, Tom Dowrick, Sophia Bano, Matt Clarkson at UCL; and Mikael Brudfors at NVIDIA
 
-## Agenda 
+## :date: Agenda 
 ### Thursday 9th Nov 2023 
 | Time  | Activity |
 | --- | --- |
@@ -40,15 +40,15 @@ Co-organisers: Steve Thompson, Tom Dowrick, Sophia Bano, Matt Clarkson at UCL; a
 | 14:45 - 16:30 | Hacking: Tidied up documentation and present results [w/Mikael Brudfors] | 
 | 16:30 - 17:00 | Closing session |
 
-## Registration and venue
+## :school: Registration and venue
 Registration is free and you can get your tickets [here](https://www.eventbrite.co.uk/e/cmichacks-2-tickets-733294452447)
 The venue of the hackathon is Jeffery (Thursday) and Elvin (Friday) rooms, Level 1, main UCL Institute of Education (IOE) building, 20 Bedford Way, London WC1H 0AL.    
 
-## Pre-requisites for participants  
+## :computer: Pre-requisites for participants  
 * Participants require to bring their own computers either with CPU or GPU. Computers with GPU will be idea to prototype models. However, we will also prepare pre-training models and simple AI workflows that does not require GPUs. 
 * Github username. Otherwise, sign up to GitHub to create an account. 
 
-## Forum
+## :family: Forum
 We are using [Discussions](https://github.com/SciKit-Surgery/cmicHACKS2/discussions/) as a place to connect with other members of our community.
 Ask questions you’re wondering about, share ideas, engage with other community members, welcome others and are open-minded. 
-Remember that this is a community we build together 💪.
+Remember that this is a community we build together 💪!
