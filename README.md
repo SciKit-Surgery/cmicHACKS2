@@ -22,28 +22,28 @@ Co-organisers: Steve Thompson, Tom Dowrick, Sophia Bano, Matt Clarkson at UCL; a
 The following is a general agenda that might have slightly changes.
  
 ### Thursday 9th Nov 2023 
-| Time  | Activity |
-| --- | --- |
-| 9:00 – 10:00 | Setting up |
-| 10:00 – 11:00 | Welcome session |
-| 11:00 -12:00 | Hacking: Setting SSH keys, clone repo, GitHub workflow to code together and document as you hack |
-| 12:00 - 13:00 | Lunch | 
-| 13:00 - 15:00 | Hacking: Training AI models |
-| 15:00 - 15:15 | Coffee break | 
-| 15:15 - 17:00 | Hacking: Test trained AI models | 
-| 17:00 – all night | Social |
+| Time  | Activity                                                                                                                                 |
+| --- |------------------------------------------------------------------------------------------------------------------------------------------|
+| 9:00 – 10:00 | Setting up                                                                                                                               |
+| 10:00 – 11:00 | Welcome session                                                                                                                          |
+| 11:00 -12:00 | Hacking: Intro the full AI pipeline and Setting GitHub repository: clone repo, GitHub workflow to code together and document as you hack |
+| 12:00 - 13:00 | Lunch                                                                                                                                    | 
+| 13:00 - 15:00 | Hacking: Get familiar with your data (download data, label data, etc.)                                                                   |
+| 15:00 - 15:15 | Coffee break                                                                                                                             | 
+| 15:15 - 17:00 | Hacking: Training AI workflow                                                                                                            | 
+| 17:00 – all night | Social                                                                                                                                   |
 
 ### Friday 10th Nov 2023 
-| Time  | Activity |
-| --- | --- |
-| 09:00 - 10:30 | Hacking: Optimise trained AI models with benchmarks |
-| 10:30 - 10:45 | Coffee break | 
-| 10:45 - 12:00 | Hacking: Test and deploy AI models in clara-agx |
-| 12:00 - 13:00 | Lunch |
+| Time  | Activity                                                                 |
+| --- |--------------------------------------------------------------------------|
+| 09:00 - 10:30 | Hacking: Evaluation of AI models with benchmarks                         |
+| 10:30 - 10:45 | Coffee break                                                             | 
+| 10:45 - 12:00 | Hacking: Optmise, test and deploy AI models in clara-agx                 |
+| 12:00 - 13:00 | Lunch                                                                    |
 | 13:00 - 14:30 | Hacking: Deploying tested models to nvidia-clara-agx [w/Mikael Brudfors] | 
-| 14:30 – 14:45 | Coffee break |
+| 14:30 – 14:45 | Coffee break                                                             |
 | 14:45 - 16:30 | Hacking: Tidied up documentation and present results [w/Mikael Brudfors] | 
-| 16:30 - 17:00 | Closing session |
+| 16:30 - 17:00 | Closing session                                                          |
 
 ## :school: Registration and venue
 Registration is free and you can get your tickets [here](https://www.eventbrite.co.uk/e/cmichacks-2-tickets-733294452447)
