@@ -26,11 +26,11 @@ The following is a general agenda that might have slightly changes.
 | --- |---------------------------------------------------------------------|
 | 9:00 – 10:00 | Setting up                                                          |
 | 10:00 – 11:00 | Welcome session                                                     |
-| 11:00 -12:00 | Hacking: Intro and preparation to hack [:link:](program/day-one/README.md)                   |
+| 11:00 -12:00 | Hacking: Intro and preparation to hack [:link:](program/day-one/README.md#1100--1200--intro-and-preparations-to-hack)                   |
 | 12:00 - 13:00 | Lunch                                                               | 
-| 13:00 - 15:00 | Hacking: Get familiar with your data [:link:](program/day-one/README.md) |
+| 13:00 - 15:00 | Hacking: Get familiar with your data [:link:](program/day-one/README.md#1300---1500--get-familiar-with-your-data) |
 | 15:00 - 15:15 | Coffee break                                                        | 
-| 15:15 - 17:00 | Hacking: Training AI workflow [:link:](program/day-one/README.md)                                      | 
+| 15:15 - 17:00 | Hacking: Training AI workflow [:link:](program/day-one/README.md#1515---1700--hacking-training-ai-workflow)                                      | 
 | 17:00 – all night | Social                                                              |
 
 ### Friday 10th Nov 2023 
