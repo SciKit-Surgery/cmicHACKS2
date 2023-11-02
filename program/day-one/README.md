@@ -47,3 +47,6 @@ Label tools:
 * https://github.com/wkentaro/labelme
 * https://github.com/opencv/cvat
 * https://github.com/microsoft/VoTT
+
+Other open datasets
+* https://datasets.simula.no/ 
