@@ -57,4 +57,4 @@ rm -rf .jekyll-cache/ _site/ Gemfile.lock
 * ONLINE-HTML-SLIDES: https://mxochicale.github.io/tools/html-slides/template/slides.html  
 * HMTL-SOURCE: https://github.com/mxochicale/tools/blob/main/html-slides/template/slides.html  
 * https://github.com/hakimel/reveal.js/tree/master/dist/theme 
-
+* https://github.com/mcanouil/awesome-quarto#presentations
