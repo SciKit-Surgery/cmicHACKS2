@@ -23,6 +23,8 @@ git clone https://github.com/SciKit-Surgery/cmicHACKS2.git
 ## 13:00 - 15:00 > Get familiar with your data
 > Get familiar with your data (download data, label data, etc.)
 
+![fig](kvasir-seg-dataset.png)
+
 1. Download Kvasir-SEG dataset
 > The Kvasir-SEG dataset (size 46.2 MB) contains 1000 polyp images and their corresponding ground truth from the Kvasir Dataset v2. 
 > The resolution of the images contained in Kvasir-SEG varies from 332x487 to 1920x1072 pixels. 
@@ -36,8 +38,11 @@ https://datasets.simula.no/downloads/kvasir-seg.zip
 See references for label tools
 
 ## 15:15 - 17:00 > Hacking: Training AI workflow
-* Hacking: Training AI workflow
-    * convert `checkpoint.pth` to `colon.onnx"`
+> Hacking: Training AI workflow   
+![fig](ml-pipeline.png)
+
+* train Segmentation models
+* convert `checkpoint.pth` to `colon.onnx"`
 
 ## References 
 
