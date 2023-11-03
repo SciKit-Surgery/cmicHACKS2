@@ -6,3 +6,8 @@
 ## ignores temporal files
 **/*.swp
 
+## site
+.jekyll-cache/ 
+_site/ 
+Gemfile.lock
+
