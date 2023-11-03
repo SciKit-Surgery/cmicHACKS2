@@ -8,6 +8,17 @@
 ```
 git clone https://github.com/SciKit-Surgery/cmicHACKS2.git 
 ```
+3. Workflow for issue management 
+```mermaid
+  flowchart TD;
+      Z[Bug Reported] -->A[...];  
+      A[Bug resolution] -->B(Testing OK?);
+      B--Yes-->C[Prepare commit];
+      B--No-->D[Reopen issue];
+      C ----> E[Push Documentation];
+      D----> A[Bug resolution];
+      E --> F[Close Bug Issue]
+```
 
 ## 13:00 - 15:00 > Get familiar with your data
 > Get familiar with your data (download data, label data, etc.)
