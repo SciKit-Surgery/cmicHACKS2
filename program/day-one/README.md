@@ -25,7 +25,7 @@ git clone https://github.com/SciKit-Surgery/cmicHACKS2.git
 
 ![fig](kvasir-seg-dataset.png)
 
-1. Download Kvasir-SEG dataset
+* Kvasir-SEG dataset
 > The Kvasir-SEG dataset (size 46.2 MB) contains 1000 polyp images and their corresponding ground truth from the Kvasir Dataset v2. 
 > The resolution of the images contained in Kvasir-SEG varies from 332x487 to 1920x1072 pixels. 
 > The images and its corresponding masks are stored in two separate folders with the same filename. 
@@ -33,9 +33,7 @@ git clone https://github.com/SciKit-Surgery/cmicHACKS2.git
 > The bounding box (coordinate points) for the corresponding images are stored in a JSON file.
 https://datasets.simula.no/downloads/kvasir-seg.zip
 
-
-2. Label data. 
-See references for label tools
+* Label data > [labelme_to_mask.ipynb.ipynb](labelme_to_mask.ipynb.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/)    
 
 ## 15:15 - 17:00 > Hacking: Training AI workflow
 > Hacking: Training AI workflow   
