@@ -41,8 +41,8 @@ See references for label tools
 > Hacking: Training AI workflow   
 ![fig](ml-pipeline.png)
 
-* Train segmentation models > [colon-seg-net_train.ipynb](colon-seg-net_train.ipynb)
-* Test segmentation models > [colon-seg-net_test.ipynb](colon-seg-net_test.ipynb)
+* Train segmentation models > [colon_seg_net_train.ipynb](colon-seg-net_train.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1s-eKu6QjaV54jva_ylG1VxwCj1B8nwJ3/view?usp=sharing)    
+* Test segmentation models > [colon_seg_net_test.ipynb](colon-seg-net_test.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1zNmljc-ppn_0RZvppI3Vz7rX3uA8msPd/view?usp=sharing)    
 * Convert `checkpoint.pth` to `colon.onnx`
 
 ## References 
