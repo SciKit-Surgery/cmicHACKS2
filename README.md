@@ -13,6 +13,7 @@ In this hackathon, instructors aim to engage with participants to bring three le
 
 We hope to bring together researchers, engineers and clinicians across different departments to hack workflows for real-time AI for Surgery (development, evaluation and integration) and hopefully to sparking future collaborations.
 
+See slides for a quick introduction: https://scikit-surgery.github.io/cmicHACKS2/slides/slides.html
 
 ## :sparkles: Project leaders and organisers 
 Leaders: [Zhehua Mao](https://github.com/ZH-Mao) and [Miguel Xochicale](https://github.com/mxochicale)    
