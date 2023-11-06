@@ -6,6 +6,9 @@
 ## ignores temporal files
 **/*.swp
 
+## notebooks
+.ipynb_checkpoints/
+
 ## site
 .jekyll-cache/ 
 _site/ 
