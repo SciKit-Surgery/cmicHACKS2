@@ -54,6 +54,19 @@ Real-Time Polyp Detection, Localization and Segmentation in Colonoscopy Using De
 IEEE Access. 2021 Mar 4;9:40496-40510. doi: 10.1109/ACCESS.2021.3063716. PMID: 33747684; PMCID: PMC7968127.
 [google-citations](https://scholar.google.com/scholar?cites=11882550127852592683&as_sdt=2005&sciodt=0,5&hl=en)
 
+
+Lee, Ji Young, Jinhoon Jeong, Eun Mi Song, Chunae Ha, Hyo Jeong Lee, Ja Eun Koo, Dong-Hoon Yang, Namkug Kim, and Jeong-Sik Byeon. 
+"Real-time detection of colon polyps during colonoscopy using deep learning: systematic validation with four independent datasets." 
+Scientific reports 10, no. 1 (2020): 8379.
+[google-citations](https://scholar.google.com/scholar?cites=6958241942401260456&as_sdt=2005&sciodt=0,5&hl=en)
+
+Nogueira-Rodríguez, Alba, Rubén Domínguez-Carbajales, Fernando Campos-Tato, Jesus Herrero, Manuel Puga, David Remedios, Laura Rivas et al. 
+"Real-time polyp detection model using convolutional neural networks." 
+Neural Computing and Applications 34, no. 13 (2022): 10375-10396.
+[google-citations](https://scholar.google.com/scholar?cites=10921968363398150924&as_sdt=2005&sciodt=0,5&hl=en)
+
+
+
 Label tools:   
 * https://www.robots.ox.ac.uk/~vgg/software/via/  
 * https://labelstud.io/  
