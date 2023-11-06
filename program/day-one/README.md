@@ -33,7 +33,7 @@ git clone https://github.com/SciKit-Surgery/cmicHACKS2.git
 > The bounding box (coordinate points) for the corresponding images are stored in a JSON file.
 https://datasets.simula.no/downloads/kvasir-seg.zip
 
-* Label data > [labelme_to_mask.ipynb](labelme_to_mask.ipynb.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1B_l_3r0ecJzpntDjwZtHHkOHWkvmIVBA)    
+* Label data > [labelme_to_mask.ipynb](labelme_to_mask.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1B_l_3r0ecJzpntDjwZtHHkOHWkvmIVBA)    
 
 ## 15:15 - 17:00 > Hacking: Training AI workflow
 > Hacking: Training AI workflow   
