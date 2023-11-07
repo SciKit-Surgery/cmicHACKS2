@@ -7,7 +7,7 @@ https://cmic-ucl.github.io/CMICHACKS/
 Artificial Intelligence (AI)-based surgical workflows use input from multiple sources of data (e.g., medical devices, trackers, robots, cameras, etc) with different Machine Learning and Deep Learning tasks (e.g., classification, segmentation, synthesis, etc) and have been applied across different surgical and acquisition workflows.
 However, the diversity of data sources, pre-processing methods, training and inference methods make a challenging scenario for low-latency applications in surgery.
 In this hackathon, instructors aim to engage with participants to bring three learning outcomes:
-* participants will learn to train, optimise, test and deploy AI models for detection and tool tracking, 
+* participants will learn to train, optimise, test and deploy AI models for segmentation tasks, 
 * participants will learn good software practices to contribute to our open-source projects aligning with medical device software standard (IEC 62304), and 
 * participants will have the chance to work with NVIDIA Clara AGX - A Universal computing architecture for next-generation AI medical instruments.    
 
@@ -17,7 +17,7 @@ See slides for a quick introduction: https://scikit-surgery.github.io/cmicHACKS2
 
 ## :sparkles: Project leaders and organisers 
 Leaders: [Zhehua Mao](https://github.com/ZH-Mao) and [Miguel Xochicale](https://github.com/mxochicale)    
-Co-organisers: Steve Thompson, Tom Dowrick, Sophia Bano, Matt Clarkson at UCL; and Mikael Brudfors at NVIDIA
+Co-organisers: Steve Thompson, Sophia Bano, Matt Clarkson at UCL; and Mikael Brudfors at NVIDIA
 
 ## :date: Agenda
 The following is a general agenda that might have slightly changes.
@@ -48,7 +48,7 @@ The following is a general agenda that might have slightly changes.
 
 ## :school: Registration and venue
 Registration is free and you can get your tickets [here](https://www.eventbrite.co.uk/e/cmichacks-2-tickets-733294452447)
-The venue of the hackathon is Jeffery (Thursday) and Elvin (Friday) rooms, Level 1, main UCL Institute of Education (IOE) building, 20 Bedford Way, London WC1H 0AL.    
+The venue of the hackathon is Jeffery (Thursday) and Elvin (Friday) rooms, Level 1, main UCL Institute of Education (IOE) building, 20 Bedford Way, London WC1H 0AL. [google-maps](https://maps.app.goo.gl/XXBmo7E9Zq2CqZ4E6)    
 
 ## :computer: Pre-requisites for participants  
 * Participants require to bring their own computers either with CPU or GPU. Computers with GPU will be idea to prototype models. However, we will also prepare pre-training models and simple AI workflows that does not require GPUs. 
