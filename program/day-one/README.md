@@ -3,10 +3,12 @@
 ## 11:00 -12:00 > Intro and preparations to hack
 > Hacking: Intro the full AI pipeline and Setting GitHub repository: clone repo, GitHub workflow to code together and document as you hack
 
-1. Setup your [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+1. Generate your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) (or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md))  
+1.1 Alternatively you can setup your [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 2. Clone repo
 ```
-git clone https://github.com/SciKit-Surgery/cmicHACKS2.git 
+git clone https://github.com/SciKit-Surgery/cmicHACKS2.git  ##using HTTPS
+git clone git@github.com:SciKit-Surgery/cmicHACKS2.git   ##using password-protected SSH key
 ```
 3. Workflow for issue management 
 ```mermaid
@@ -54,7 +56,13 @@ Real-Time Polyp Detection, Localization and Segmentation in Colonoscopy Using De
 IEEE Access. 2021 Mar 4;9:40496-40510. doi: 10.1109/ACCESS.2021.3063716. PMID: 33747684; PMCID: PMC7968127.
 [google-citations](https://scholar.google.com/scholar?cites=11882550127852592683&as_sdt=2005&sciodt=0,5&hl=en)
 
-Label tools:   
+
+"Confidently Navigating Software as a Medical Device (SaMD) Product Development"
+June 15, 2023, Josh Cates, Tim Thirion and Andinet Enquobahrie
+https://www.kitware.com/confidently-navigating-software-as-a-medical-device-samd-product-development/ 
+
+
+Labelling tools:   
 * https://www.robots.ox.ac.uk/~vgg/software/via/  
 * https://labelstud.io/  
 * https://github.com/wkentaro/labelme
