@@ -51,6 +51,7 @@ https://datasets.simula.no/downloads/kvasir-seg.zip
 ![fig](ml-pipeline.png)
 
 * Train segmentation models > [colon_seg_net_train.ipynb](colon_seg_net_train.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s-eKu6QjaV54jva_ylG1VxwCj1B8nwJ3)    
+* Add your model and notebook [here](../../data/models/README.md#onnx-models)
 
 ## References 
 
