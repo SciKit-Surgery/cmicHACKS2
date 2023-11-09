@@ -8,6 +8,10 @@ on:
 
 jobs:
   deploy-slides:
+    defaults:
+      run:
+        working-directory: ./slides
+    
     runs-on: ubuntu-latest
     steps:
       - name: checkout source
@@ -20,7 +24,6 @@ jobs:
           bundler-cache: true
 
       - name: Install and Build
-        working-directory: ./slides
         run: >-
           JEKYLL_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
           JEKYLL_ENV=production
