@@ -6,22 +6,33 @@ on:
       - main
   pull_request:
 
+concurrency:
+  cancel-in-progress: true
+  group: >-
+    ${{ github.workflow }}-
+    ${{ github.event.pull_request.number || github.ref }}
+
 jobs:
   deploy-slides:
+    env:
+      BUNDLE_GEMFILE: ${{ github.workspace }}/slides/Gemfile
     runs-on: ubuntu-latest
     steps:
-      - name: checkout source
+      - name: Checkout source
         uses: actions/checkout@v4
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
-          working-directory: ./slides
+          bundler-cache: true
 
       - name: Install and Build
         working-directory: ./slides
-        run: bundle exec jekyll serve
+        run: >-
+            JEKYLL_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+            JEKYLL_ENV=production
+            bundle exec jekyll serve
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
