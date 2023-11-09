@@ -1,7 +1,8 @@
 # Colonoscopy Polyp Segmentation
 > Full workflow including a generic visualization of segmentation results from a polyp segmentation models.
 
-* See [connections](../../docs/connections) to either setup  your connection or just connect to clara-agx
+* See [Holohub repo](https://github.com/nvidia-holoscan/holohub/) to either setup  your connection or just connect to clara-agx
+
 
 * Run container
 ```
