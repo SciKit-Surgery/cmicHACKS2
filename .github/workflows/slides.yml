@@ -24,7 +24,7 @@ jobs:
         run: >-
           JEKYLL_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
           JEKYLL_ENV=production
-          bundle exec jekyll build
+          bundle exec jekyll serve
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
