@@ -1,7 +1,4 @@
 # :nut_and_bolt: Hacking Real-time AI workflows for Surgery :wrench: 
-![fig](program/figures/team-logo.png)
-
-
 Hackathon hosted by CMIC    
 9-10th November 2023    
 https://cmic-ucl.github.io/CMICHACKS/    
@@ -16,7 +13,7 @@ In this hackathon, instructors aim to engage with participants to bring three le
 
 We hope to bring together researchers, engineers and clinicians across different departments to hack workflows for real-time AI for Surgery (development, evaluation and integration) and hopefully to sparking future collaborations.
 
-See slides for a quick introduction: https://scikit-surgery.github.io/cmicHACKS2
+See slides for a quick introduction: https://scikit-surgery.github.io/cmicHACKS2/slides/slides.html
 
 ## :sparkles: Project leaders and organisers 
 Leaders: [Zhehua Mao](https://github.com/ZH-Mao) and [Miguel Xochicale](https://github.com/mxochicale)    
@@ -54,12 +51,9 @@ Registration is free and you can get your tickets [here](https://www.eventbrite.
 The venue of the hackathon is Jeffery (Thursday) and Elvin (Friday) rooms, Level 1, main UCL Institute of Education (IOE) building, 20 Bedford Way, London WC1H 0AL. [google-maps](https://maps.app.goo.gl/XXBmo7E9Zq2CqZ4E6)    
 
 ## :computer: Pre-requisites for participants  
-* Participants require to bring their own computers either with CPU or GPU. Computers with GPU will be ideal to prototype models. However, we will also prepare simple AI workflows in google-colabs that does not require GPUs. 
-* Gmail account to prototype models in google colabs.   
-* Github username. Otherwise, [sign up](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) to GitHub to create an account.
-* Clone https://github.com/SciKit-Surgery/cmicHACKS2.git. 
-See further details here [:link:](program/day-one/README.md#1100--1200--intro-and-preparations-to-hack) 
-
+* Participants require to bring their own computers either with CPU or GPU. Computers with GPU will be idea to prototype models. However, we will also prepare pre-training models and simple AI workflows that does not require GPUs. 
+* Have a Github username. Otherwise, [sign up](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) to GitHub to create an account.
+* Clone https://github.com/SciKit-Surgery/cmicHACKS2.git  
 
 ## :family: Forum
 We are using [Discussions](https://github.com/SciKit-Surgery/cmicHACKS2/discussions/) as a place to connect with other members of our community.
