@@ -11,8 +11,7 @@
 
 ## site
 .jekyll-cache/ 
-_site/ 
-Gemfile.lock
+_site/
 
 ## Kvasir-SEG dataset
 kvasir-seg.zip
