@@ -5,6 +5,7 @@
 ```
 wget https://datasets.simula.no/downloads/kvasir-seg.zip #(45M)
 unzip kvasir-seg.zip
+rm kvasir-seg.zip
 ```
 
 ## Converting images to video 
