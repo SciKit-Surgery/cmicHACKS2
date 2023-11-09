@@ -22,6 +22,15 @@ git clone git@github.com:SciKit-Surgery/cmicHACKS2.git   ##using password-protec
       E --> F[Close Bug Issue]
 ```
 
+4. Rebasing your branch with the latest changes of main 
+```
+git checkout main
+git pull origin main
+git checkout RB
+git rebase main
+git push --force origin RB
+```
+
 ## 13:00 - 15:00 > Get familiar with your data
 > Get familiar with your data (download data, label data, etc.)
 
@@ -42,6 +51,7 @@ https://datasets.simula.no/downloads/kvasir-seg.zip
 ![fig](ml-pipeline.png)
 
 * Train segmentation models > [colon_seg_net_train.ipynb](colon_seg_net_train.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s-eKu6QjaV54jva_ylG1VxwCj1B8nwJ3)    
+* Add your model and notebook [here](../../data/models/README.md#onnx-models)
 
 ## References 
 
