@@ -22,6 +22,15 @@ git clone git@github.com:SciKit-Surgery/cmicHACKS2.git   ##using password-protec
       E --> F[Close Bug Issue]
 ```
 
+4. Rebasing your branch with the latest changes of main 
+```
+git checkout main
+git pull origin main
+git checkout RB
+git rebase main
+git push --force origin RB
+```
+
 ## 13:00 - 15:00 > Get familiar with your data
 > Get familiar with your data (download data, label data, etc.)
 
