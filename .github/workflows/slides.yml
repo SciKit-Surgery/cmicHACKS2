@@ -8,9 +8,6 @@ on:
 
 jobs:
   deploy-slides:
-    defaults:
-      run:
-        working-directory: ./slides
     runs-on: ubuntu-latest
     steps:
       - name: checkout source
@@ -20,8 +17,10 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
+          working-directory: ./slides
 
       - name: Install and Build
+        working-directory: ./slides
         run: >-
           JEKYLL_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
           JEKYLL_ENV=production
@@ -31,7 +30,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: ./slides/_site
           publish_branch: 7-slides
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
