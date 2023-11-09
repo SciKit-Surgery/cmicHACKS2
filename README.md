@@ -1,4 +1,7 @@
 # :nut_and_bolt: Hacking Real-time AI workflows for Surgery :wrench: 
+![fig](program/figures/team-logo.png)
+
+
 Hackathon hosted by CMIC    
 9-10th November 2023    
 https://cmic-ucl.github.io/CMICHACKS/    
