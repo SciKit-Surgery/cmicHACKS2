@@ -37,7 +37,7 @@ bundle exec jekyll serve
 ```
 2. Open hmtl slides using firefox on a local server.
 ```
-firefox http://127.0.0.1:4000 #or google-chrome http://127.0.0.1:4000
+firefox http://127.0.0.1:4000/slides.html #or google-chrome http://127.0.0.1:4000/slides.html
 ```
 3. You might like to remove build files
 ```
@@ -48,7 +48,7 @@ rm -rf .jekyll-cache/ _site/ Gemfile.lock
 1. Setting up pages at https://github.com/SciKit-Surgery/cmicHACKS2/settings/pages
 2. Select deploy from a branch, select branch `7-slides` with path `/root` and[SAVE]. Then, you might need to select `main` branch for the final version of the slides.
 3. First GitHub action:  https://github.com/SciKit-Surgery/cmicHACKS2/actions/runs/6747753816
-4. Online slides should be available here https://scikit-surgery.github.io/cmicHACKS2
+4. Online slides should be available here https://scikit-surgery.github.io/cmicHACKS2/slides/slides.html
 
 
 ## References 
