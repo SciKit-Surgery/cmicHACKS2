@@ -52,8 +52,8 @@ The venue of the hackathon is Jeffery (Thursday) and Elvin (Friday) rooms, Level
 
 ## :computer: Pre-requisites for participants  
 * Participants require to bring their own computers either with CPU or GPU. Computers with GPU will be ideal to prototype models. However, we will also prepare simple AI workflows in google-colabs that does not require GPUs. 
-* Have a gmail account to prototype models in google colabs.   
-* Have a Github username. Otherwise, [sign up](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) to GitHub to create an account.
+* Gmail account to prototype models in google colabs.   
+* Github username. Otherwise, [sign up](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) to GitHub to create an account.
 * Clone https://github.com/SciKit-Surgery/cmicHACKS2.git. 
 See further details here [:link:](program/day-one/README.md#1100--1200--intro-and-preparations-to-hack) 
 
