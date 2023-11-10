@@ -7,7 +7,7 @@
 | Model (Size)  | Download | Notebook |
 | -- |-- | -- |
 | ColonSegNet-07112023-2359.onnx (20MB or 20,067,028) | [:link:](TOADD) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s-eKu6QjaV54jva_ylG1VxwCj1B8nwJ3) |
-| Add Your model (copy and paste this line) | [:link:](TOADD) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/TOADD) |
+| Not converted to .onnx yet as it's a bad model augmenting the data with brightness and contrast only | [:link:](TOADD) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CgdpeDY4SLpKddk6dFvXpFwcx0skF8dj#scrollTo=e7dn13rCydBf) |
 
 
 ### Examples to download models in your local machine
