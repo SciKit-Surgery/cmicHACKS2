@@ -187,8 +187,6 @@ NOTE: This could take a couple of minutes depending on your model size and GPU!
 
 ```
 
-![fig](../../docs/figures/colonoscopy_segmentation.png)
-
 ## Optmise model
 
 ```
