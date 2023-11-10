@@ -5,7 +5,6 @@ on:
     branches:
       - main
   workflow_dispatch:
-  pull_request:
 
 concurrency:
   cancel-in-progress: true
@@ -18,8 +17,27 @@ jobs:
       BUNDLE_GEMFILE: ${{ github.workspace }}/slides/Gemfile
     runs-on: ubuntu-latest
     steps:
-      - uses: paddyroddy/.github/actions/ruby/jekyll@v0
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          docs-directory: slides
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Install and Build
+        working-directory: ./slides
+        run: >-
+            JEKYLL_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+            JEKYLL_ENV=production
+            bundle exec jekyll build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./slides/_site
+          publish_branch: gh-pages
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
