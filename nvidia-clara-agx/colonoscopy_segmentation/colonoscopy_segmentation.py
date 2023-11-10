@@ -46,11 +46,15 @@ class InfoOp(Operator):
         in_message = op_input.receive("in")
 
         # Transpose
-        tensor = cp.asarray(in_message.get("inference_output_tensor")).get()
+        tensor = cp.asarray(in_message.get("inference_output_tensor"))
+        print(f"tensor.min()={cp.min(tensor)}")
+        print(f"tensor.max()={cp.max(tensor)}")
+        print(f"tensor.mean()={cp.mean(tensor)}")
+        print(f"tensor.shape={tensor.shape}")
 
         # Create output message
         out_message = Entity(context)
-        out_message.add(hs.as_tensor(tensor), "out_tensor")
+        out_message.add(hs.as_tensor(tensor), "inference_output_tensor")
         op_output.emit(out_message, "out")
 		
 		
@@ -80,7 +84,8 @@ class ColonoscopyApp(Application):
         self.sample_data_path = data
 
         self.model_path_map = {
-            "ultrasound_seg": os.path.join(self.sample_data_path, "colon.onnx"),
+            #"ultrasound_seg": os.path.join(self.sample_data_path, "colon.onnx"),
+            "ultrasound_seg": os.path.join(self.sample_data_path, "ColonSegNet-07112023-2359.onnx"),
         }
 
     def compose(self):
@@ -205,6 +210,7 @@ class ColonoscopyApp(Application):
         self.add_flow(segmentation_preprocessor, segmentation_inference, {("", "receivers")})
         self.add_flow(segmentation_inference, info_op, {("transmitter", "in")})
         self.add_flow(info_op, segmentation_postprocessor, {("out", "")})
+        #self.add_flow(segmentation_inference, segmentation_postprocessor, {("transmitter", "")})
         self.add_flow(
             segmentation_postprocessor,
             segmentation_visualizer,
