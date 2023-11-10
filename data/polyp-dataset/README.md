@@ -12,6 +12,22 @@ rm kvasir-seg.zip
 ```
 cd data/polyp-dataset/Kvasir-SEG/images
 ffmpeg -framerate 30 -pattern_type glob -i 'Kvasir-SEG/images/ck*.jpg' -c:v libx264 out720x576.mp4
+
+
+ #cp images/ck2bxknhjvs1x0794iogrq49k.jpg selected/
+ #cp images/cju16jgnyzp970878melv7r25.jpg selected/
+ #cp images/cju33w4sdcivk0855x879zht7.jpg selected/
+ #cp images/cju85omszllp30850b6rm9mi3.jpg selected/
+
+
+ #convert cju16jgnyzp970878melv7r25.jpg -resize 512x cju16jgnyzp970878melv7r25.jpg
+ #convert cju33w4sdcivk0855x879zht7.jpg -resize 512x cju33w4sdcivk0855x879zht7.jpg
+ #convert cju85omszllp30850b6rm9mi3.jpg -resize 512x cju85omszllp30850b6rm9mi3.jpg
+ #convert ck2bxknhjvs1x0794iogrq49k.jpg -resize 512x ck2bxknhjvs1x0794iogrq49k.jpg
+
+ffmpeg -framerate 30 -pattern_type glob -i 'Kvasir-SEG/selected-512x/*.jpg' -c:v libx264 out720x576-selection512x.mp4
+
+
 ```
 
 
@@ -22,6 +38,9 @@ mamba activate cagxVE
 #ffmpeg -i out.mp4 -pix_fmt rgb24 -f rawvideo pipe:1 | python convert_video_to_gxf_entities.py --width 1920 --height 1080 --channels 3 --framerate 1 --basename out
 #ffmpeg -i out.mp4 -pix_fmt yuvj422p -f rawvideo pipe:1 | python convert_video_to_gxf_entities.py --width 600 --height 500 --channels 3 --framerate 1 --basename out
 ffmpeg -i out720x576.mp4 -pix_fmt rgb24 -f rawvideo pipe:1 | python ../../nvidia-clara-agx/holoscan-sdk-scripts/convert_video_to_gxf_entities.py --width 720 --height 576 --channels 3 --framerate 30 --basename out720x576
+
+ffmpeg -i out720x576-selection512x.mp4 -pix_fmt rgb24 -f rawvideo pipe:1 | python ../../nvidia-clara-agx/holoscan-sdk-scripts/convert_video_to_gxf_entities.py --width 720 --height 576 --channels 3 --framerate 30 --basename out720x576-selection512x
+
 ```
 https://github.com/nvidia-holoscan/holoscan-sdk/tree/main/scripts#convert_video_to_gxf_entitiespy
 https://docs.nvidia.com/holoscan/sdk-user-guide/gxf/gxf_by_example.html  
