@@ -15,6 +15,7 @@ cd ~/holohub
 cd /workspace/holohub/data/colonoscopy_segmentation
 cp ../../cmicHACKS2/data/models/ColonSegNet-07112023-2359.onnx .
 cp ../../cmicHACKS2/data/polyp-dataset/out.mp4 .
+cp ../../cmicHACKS2/data/polyp-dataset/out.gxf_* .
 ```
 
 
