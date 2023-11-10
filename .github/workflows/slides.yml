@@ -15,7 +15,7 @@ concurrency:
 jobs:
   deploy-slides:
     env:
-        BUNDLE_GEMFILE: ${{ github.workspace }}/slides/Gemfile
+      BUNDLE_GEMFILE: ${{ github.workspace }}/slides/Gemfile
     runs-on: ubuntu-latest
     steps:
       - uses: paddyroddy/.github/actions/ruby/jekyll@v0
