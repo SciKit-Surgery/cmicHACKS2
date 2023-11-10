@@ -6,8 +6,9 @@
 ## ignores temporal files
 **/*.swp
 
-## notebooks
+## python related scripts
 .ipynb_checkpoints/
+__pycache__/
 
 ## site
 .jekyll-cache/ 

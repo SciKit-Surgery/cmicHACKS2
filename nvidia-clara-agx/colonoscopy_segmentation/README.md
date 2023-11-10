@@ -6,9 +6,26 @@
 
 * Run container
 ```
-cd holohub
+cd ~/holohub
 ./dev_container launch --ssh_x11
 ```
+
+* Copy data
+```
+cd /workspace/holohub/data/colonoscopy_segmentation
+cp ../../cmicHACKS2/data/models/ColonSegNet-07112023-2359.onnx .
+cp ../../cmicHACKS2/data/polyp-dataset/out720x576.mp4 .
+cp ../../cmicHACKS2/data/polyp-dataset/out720x576.gxf_* .
+```
+
+
+* Running in our own repository
+```
+cd /workspace/holohub/cmicHACKS2/nvidia-clara-agx/colonoscopy_segmentation
+python colonoscopy_segmentation.py --data /workspace/holohub/data/colonoscopy_segmentation
+```
+
+
 
 * Build application (mainly download data)
 ```
@@ -26,11 +43,7 @@ cd /workspace/holohub/applications/colonoscopy_segmentation/
 python colonoscopy_segmentation.py --data /workspace/holohub/data/colonoscopy_segmentation
 ```
 
-in our own repository
-```
-cd /workspace/holohub/nvdia-clara-agx/examples/colonoscopy_segmentation
-python colonoscopy_segmentation.py --data /workspace/holohub/data/colonoscopy_segmentation
-```
+
 
 
 * log
@@ -173,8 +186,6 @@ NOTE: This could take a couple of minutes depending on your model size and GPU!
 [info] [gxf_executor.cpp:229] Destroying context
 
 ```
-
-![fig](../../docs/figures/colonoscopy_segmentation.png)
 
 ## Optmise model
 

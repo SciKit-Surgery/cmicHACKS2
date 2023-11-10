@@ -11,9 +11,66 @@ rm kvasir-seg.zip
 ## Converting images to video 
 ```
 cd data/polyp-dataset/Kvasir-SEG/images
-ffmpeg -framerate 1 -pattern_type glob -i 'Kvasir-SEG/images/ck*.jpg' -c:v libx264 out.mp4
+ffmpeg -framerate 1 -pattern_type glob -i 'Kvasir-SEG/images/ck*.jpg' -c:v libx264 out720x576.mp4
 ```
+
+
+
+## Using `convert_video_to_gxf_entities.py`  (Graph Execution Framework, GXF)
+```
+mamba activate cagxVE
+#ffmpeg -i out.mp4 -pix_fmt rgb24 -f rawvideo pipe:1 | python convert_video_to_gxf_entities.py --width 1920 --height 1080 --channels 3 --framerate 1 --basename out
+#ffmpeg -i out.mp4 -pix_fmt yuvj422p -f rawvideo pipe:1 | python convert_video_to_gxf_entities.py --width 600 --height 500 --channels 3 --framerate 1 --basename out
+ffmpeg -i out720x576.mp4 -pix_fmt rgb24 -f rawvideo pipe:1 | python ../../nvidia-clara-agx/holoscan-sdk-scripts/convert_video_to_gxf_entities.py --width 720 --height 576 --channels 3 --framerate 1 --basename out720x576
+```
+https://github.com/nvidia-holoscan/holoscan-sdk/tree/main/scripts#convert_video_to_gxf_entitiespy
+https://docs.nvidia.com/holoscan/sdk-user-guide/gxf/gxf_by_example.html  
+https://docs.nvidia.com/clara-holoscan/archive/clara-holoscan-0.3.0/gxf/index.html
+
+
+## Coping files to clara-agx
+```
+cd /workspace/holohub/data/colonoscopy_segmentation
+cp ../../cmicHACKS2/data/polyp-dataset/out720x576.mp4 .
+cp ../../cmicHACKS2/data/polyp-dataset/out720x576.gxf_* .
+```
+
+
+
+
+## Testing `raw.mp4` with `convert_video_to_gxf_entities.py`
+```
+mamba activate cagxVE
+
+wget --content-disposition 'https://api.ngc.nvidia.com/v2/resources/org/nvidia/team/clara-holoscan/holoscan_endoscopy_sample_data/20221121/files?redirect=true&path=video/raw.mp4' -O raw.mp4
+
+wget --content-disposition 'https://api.ngc.nvidia.com/v2/resources/org/nvidia/team/clara-holoscan/holoscan_colonoscopy_sample_data/20230222/files?redirect=true&path=colon_exam_720x576.mp4' -O colon_exam_720x576.mp4
+
+ffmpeg -i raw.mp4 -pix_fmt rgb24 -f rawvideo pipe:1 | python scripts/convert_video_to_gxf_entities.py --width 1920 --height 1080 --channels 3 --framerate 30 --basename raw
+
+ffmpeg -i colon_exam_720x576.mp4 -pix_fmt rgb24 -f rawvideo pipe:1 | python scripts/convert_video_to_gxf_entities.py --width 720 --height 576 --channels 3 --framerate 30 --basename colon_exam_720x576
+
+```
+
+errors
+
+```
+
+av_interleaved_write_frame(): Broken pipe
+Error writing trailer of pipe:1: Broken pipeime=00:00:00.04 bitrate=248832.0kbits/s speed=1.83x    
+frame=    1 fps=0.0 q=-0.0 Lsize=    1215kB time=00:00:00.04 bitrate=248832.0kbits/s speed=1.22x    
+video:1215kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000000%
+Conversion failed!
+
+```
+
+https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara-holoscan/resources/holoscan_endoscopy_sample_data/files?version=20221121
+
 
 
 ## References 
 https://stackoverflow.com/questions/22965569/convert-from-jpg-to-mp4-by-ffmpeg  
+https://docs.nvidia.com/holoscan/sdk-user-guide/gxf/gxf_by_example.html   
+
+
+

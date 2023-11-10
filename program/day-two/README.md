@@ -1,13 +1,15 @@
 # Friday 10th Nov 2023
 
 ## 09:00 - 10:30 > Hacking: Evaluation of AI models with benchmarks
-* Test segmentation models > [colon_seg_net_test.ipynb](colon_seg_net_test.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zNmljc-ppn_0RZvppI3Vz7rX3uA8msPd)    
-* Convert `checkpoint.pth` to `colon.onnx`
+* Test segmentation models and convert `checkpoint.pth` to `colon.onnx` > [colon_seg_net_test.ipynb](colon_seg_net_test.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zNmljc-ppn_0RZvppI3Vz7rX3uA8msPd)
 
 ## 10:45 - 12:00 > Hacking: Optmise, test and deploy AI models in clara-agx
 > How can choosing the right floating point precision improve performance with my application?  
 
-* Optmising your model with different precisions
+* See [workflow](../../data/polyp-dataset/README.md) to convert your images to video and gxf format 
+* See Inference Parameters (`backend` and `enable_fp16`=True/False) in [colonoscopy_segmentation.py](../../nvidia-clara-agx/colonoscopy_segmentation/colonoscopy_segmentation.py) and further descriptions in this [README](../../nvidia-clara-agx/colonoscopy_segmentation/README.md)
+ 
+Models can also be optimised using tao-coverter
 ```
 ./tao-converter \
     -k tlt_encode \
@@ -30,13 +32,14 @@
 input_file
 ```
 
-## 13:00 - 14:30 > Hacking: Clara AGX/IGX for intelligent Medical Instrumets by Mikael Brudfors
-* Presentation 
+## 13:00 - 14:30 > Hacking: Clara AGX/IGX for intelligent Medical Instruments by Mikael Brudfors
+* Mikael Brudfors introducing Clara AGX/IGX for intelligent Medical Instruments
 * Q&As
 * Keep hacking 
 
 ## 14:45 - 16:30 > Tidied up documentation and present results
-* Prepare documentatation for results and create PRs
+* Prepare documentation and discuss results
+* Create PRs
 * Review and merge PRS
 * Group photo
 
