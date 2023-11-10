@@ -21,7 +21,7 @@ cp ../../cmicHACKS2/data/polyp-dataset/out720x576.gxf_* .
 
 * Running in our own repository
 ```
-cd /workspace/holohub/nvdia-clara-agx/examples/colonoscopy_segmentation
+cd /workspace/holohub/cmicHACKS2/nvidia-clara-agx/colonoscopy_segmentation
 python colonoscopy_segmentation.py --data /workspace/holohub/data/colonoscopy_segmentation
 ```
 

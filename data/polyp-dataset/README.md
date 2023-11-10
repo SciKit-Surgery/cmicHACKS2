@@ -29,7 +29,8 @@ https://github.com/nvidia-holoscan/holoscan-sdk/tree/main/scripts#convert_video_
 ## Coping files to clara-agx
 ```
 cd /workspace/holohub/data/colonoscopy_segmentation
-cp ../../cmicHACKS2/data/polyp-dataset/out720x577.gxf_* .
+cp ../../cmicHACKS2/data/polyp-dataset/out720x576.mp4 .
+cp ../../cmicHACKS2/data/polyp-dataset/out720x576.gxf_* .
 ```
 
 
