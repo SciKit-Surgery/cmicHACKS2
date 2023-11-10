@@ -6,9 +6,25 @@
 
 * Run container
 ```
-cd holohub
+cd ~/holohub
 ./dev_container launch --ssh_x11
 ```
+
+* Copy data
+```
+cd /workspace/holohub/data/colonoscopy_segmentation
+cp ../../cmicHACKS2/data/models/ColonSegNet-07112023-2359.onnx .
+cp ../../cmicHACKS2/data/polyp-dataset/out.mp4 .
+```
+
+
+* Running in our own repository
+```
+cd /workspace/holohub/nvdia-clara-agx/examples/colonoscopy_segmentation
+python colonoscopy_segmentation.py --data /workspace/holohub/data/colonoscopy_segmentation
+```
+
+
 
 * Build application (mainly download data)
 ```
@@ -26,11 +42,7 @@ cd /workspace/holohub/applications/colonoscopy_segmentation/
 python colonoscopy_segmentation.py --data /workspace/holohub/data/colonoscopy_segmentation
 ```
 
-in our own repository
-```
-cd /workspace/holohub/nvdia-clara-agx/examples/colonoscopy_segmentation
-python colonoscopy_segmentation.py --data /workspace/holohub/data/colonoscopy_segmentation
-```
+
 
 
 * log
