@@ -39,7 +39,7 @@ mamba activate cagxVE
 #ffmpeg -i out.mp4 -pix_fmt yuvj422p -f rawvideo pipe:1 | python convert_video_to_gxf_entities.py --width 600 --height 500 --channels 3 --framerate 1 --basename out
 ffmpeg -i out720x576.mp4 -pix_fmt rgb24 -f rawvideo pipe:1 | python ../../nvidia-clara-agx/holoscan-sdk-scripts/convert_video_to_gxf_entities.py --width 720 --height 576 --channels 3 --framerate 30 --basename out720x576
 
-ffmpeg -i out720x576-selection512x.mp4 -pix_fmt rgb24 -f rawvideo pipe:1 | python ../../nvidia-clara-agx/holoscan-sdk-scripts/convert_video_to_gxf_entities.py --width 720 --height 576 --channels 3 --framerate 30 --basename out720x576-selection512x
+ffmpeg -i out720x576-selection512x.mp4 -pix_fmt rgb24 -f rawvideo pipe:1 | python ../../nvidia-clara-agx/holoscan-sdk-scripts/convert_video_to_gxf_entities.py --width 512 --height 484 --channels 3 --framerate 30 --basename out720x576-selection512x
 
 ```
 https://github.com/nvidia-holoscan/holoscan-sdk/tree/main/scripts#convert_video_to_gxf_entitiespy
