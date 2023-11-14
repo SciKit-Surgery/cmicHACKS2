@@ -54,8 +54,9 @@ class ColonoscopyApp(Application):
         self.sample_data_path = data
 
         self.model_path_map = {
-            "ultrasound_seg": os.path.join(self.sample_data_path, "ColonSegNet-07112023-2359.onnx"),
+            #"ultrasound_seg": os.path.join(self.sample_data_path, "ColonSegNet-07112023-2359.onnx"),
             #"ultrasound_seg": os.path.join(self.sample_data_path, "colon.onnx"),
+            "ultrasound_seg": os.path.join(self.sample_data_path, "ColonSegNet_brightcontr.onnx"),
         }
 
     def compose(self):

@@ -1,0 +1,24 @@
+
+Dataset Size after Augmentation:
+Train: 1760 - Valid: 120
+
+Hyperparameters:
+Image Size: (512, 512)
+Batch Size: 6
+LR: 0.0001
+Epochs: 3
+Optimizer: Adam
+Loss: BCE Dice Loss
+
+Epoch: 01 | Epoch Time: 9m 48s
+	Train Loss: 1.088
+	 Val. Loss: 0.991
+
+Epoch: 02 | Epoch Time: 9m 47s
+	Train Loss: 0.888
+	 Val. Loss: 0.900
+
+Epoch: 03 | Epoch Time: 9m 47s
+	Train Loss: 0.780
+	 Val. Loss: 0.868
+
