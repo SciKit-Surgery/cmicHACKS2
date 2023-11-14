@@ -67,6 +67,11 @@ IEEE Access. 2021 Mar 4;9:40496-40510. doi: 10.1109/ACCESS.2021.3063716. PMID: 3
 [google-citations](https://scholar.google.com/scholar?cites=11882550127852592683&as_sdt=2005&sciodt=0,5&hl=en)
 
 
+Martina, Maria Raffaella, Elisabetta Bianchini, Sara Sinceri, Martina Francesconi, and Vincenzo Gemignani. 
+"Software medical device maintenance: DevOps based approach for problem and modification management." 
+Journal of Software: Evolution and Process (2023): e2570.
+[google-scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=%22Software+medical+device+maintenance%3A+DevOps+based+approach+for+problem+and+modification+management.%22+&btnG=)
+
 "Confidently Navigating Software as a Medical Device (SaMD) Product Development"
 June 15, 2023, Josh Cates, Tim Thirion and Andinet Enquobahrie
 https://www.kitware.com/confidently-navigating-software-as-a-medical-device-samd-product-development/ 
