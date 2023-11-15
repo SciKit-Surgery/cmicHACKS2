@@ -17,7 +17,10 @@
 replayer:  # VideoStreamReplayer
   #basename: "colon_exam_720x576"
   #basename: "out720x576"
-  basename: "out720x576-selection512x"
+  #basename: "out720x576-selection512x"
+  #basename: "out512x448-selected-ck2bxknhjvs1x0794iogrq49k-05-frames"#not-rendered-properly
+  #basename: "out512x512-selected-ck2bxknhjvs1x0794iogrq49k-05-frames"#not-rendered-properly
+  basename: "out602x528-selected-ck2bxknhjvs1x0794iogrq49k-05-frames"
   frame_rate: 0 # as specified in timestamps
   repeat: true # default: false
   realtime: true # default: true
