@@ -6,9 +6,10 @@
 
 | Model (Size)  | Download | Notebook |
 | -- |-- | -- |
-| Geometric Tx | [:[[link](https://drive.google.com/file/d/1vE023Thky0vKfoYD7wZecrglHEgp3z-W/view?usp=drive_link)]:](TOADD) | [![Open In Colab] (https://colab.research.google.com/assets/colab-badge.svg)] (https://colab.research.google.com/drive/1s-eKu6QjaV54jva_ylG1VxwCj1B8nwJ3) |
-| Baseline model 4 epochs | [:[[link](https://drive.google.com/file/d/1SWPzOeqKyKqBM9FVfj0qCPn8cxEhX9BK/view?usp=drive_link)]:](TOADD)  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)] (https://colab.research.google.com/drive/TOADD) |
-| Model Data augmented translation rotation augmentation | | https://colab.research.google.com/drive/1P93OQnpg8-ZVMUKdRdbGZ7V9sRIk6oUZ#scrollTo=e7dn13rCydBf |
+| ColonSegNet-07112023-2359.onnx (20MB or 20,067,028) | [:link:](TOADD) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s-eKu6QjaV54jva_ylG1VxwCj1B8nwJ3)
+| Geometric Tx | [:link:](https://drive.google.com/file/d/1vE023Thky0vKfoYD7wZecrglHEgp3z-W/view?usp=sharing) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s-eKu6QjaV54jva_ylG1VxwCj1B8nwJ3) | 
+| Baseline model 4 epochs | [:link:](https://drive.google.com/file/d/1SWPzOeqKyKqBM9FVfj0qCPn8cxEhX9BK/view?usp=drive_link) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/TOADD) |
+Add Your model (copy and paste this line) | [:link:](TOADD) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/TOADD) |
 
 
 ### Examples to download models in your local machine
