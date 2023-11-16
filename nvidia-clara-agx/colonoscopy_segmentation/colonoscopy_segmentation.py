@@ -16,7 +16,7 @@
 import os
 from argparse import ArgumentParser
 
-from holoscan.core import Application
+from holoscan.core import Application, Operator, OperatorSpec
 from holoscan.operators import (
     AJASourceOp,
     FormatConverterOp,
@@ -25,9 +25,39 @@ from holoscan.operators import (
     SegmentationPostprocessorOp,
     VideoStreamReplayerOp,
 )
-from holoscan.resources import BlockMemoryPool, CudaStreamPool, MemoryStorageType
+from holoscan.gxf import Entity
+from holoscan.resources import BlockMemoryPool, CudaStreamPool, MemoryStorageType, UnboundedAllocator
+import cupy as cp
+import holoscan as hs
 
 
+class InfoOp(Operator):
+    """"""
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def setup(self, spec: OperatorSpec):
+        spec.input("in")
+        spec.output("out")
+
+    def compute(self, op_input, op_output, context):
+        # Get input message
+        in_message = op_input.receive("in")
+
+        # Transpose
+        tensor = cp.asarray(in_message.get("inference_output_tensor"))
+        print(f"tensor.min()={cp.min(tensor)}")
+        print(f"tensor.max()={cp.max(tensor)}")
+        print(f"tensor.mean()={cp.mean(tensor)}")
+        print(f"tensor.shape={tensor.shape}")
+
+        # Create output message
+        out_message = Entity(context)
+        out_message.add(hs.as_tensor(tensor), "inference_output_tensor")
+        op_output.emit(out_message, "out")
+		
+		
 class ColonoscopyApp(Application):
     def __init__(self, data, source="replayer"):
         """Initialize the colonoscopy segmentation application
@@ -54,8 +84,9 @@ class ColonoscopyApp(Application):
         self.sample_data_path = data
 
         self.model_path_map = {
-            "ultrasound_seg": os.path.join(self.sample_data_path, "ColonSegNet-07112023-2359.onnx"),
             #"ultrasound_seg": os.path.join(self.sample_data_path, "colon.onnx"),
+            "ultrasound_seg": os.path.join(self.sample_data_path, "ColonSegNet-07112023-2359.onnx"),
+            #"ultrasound_seg": os.path.join(self.sample_data_path, "ColonSegNet_brightcontr.onnx"),
         }
 
     def compose(self):
@@ -143,6 +174,12 @@ class ColonoscopyApp(Application):
             transmit_on_cuda=True,
         )
 
+        info_op = InfoOp(
+            self,
+            name="info",
+            pool=UnboundedAllocator(self, name="pool"),
+        )
+		
         postprocessor_block_size = width_inference * height_inference
         postprocessor_num_blocks = 2
         segmentation_postprocessor = SegmentationPostprocessorOp(
@@ -172,7 +209,9 @@ class ColonoscopyApp(Application):
             self.add_flow(source, segmentation_visualizer, {("", "receivers")})
             self.add_flow(source, segmentation_preprocessor)
         self.add_flow(segmentation_preprocessor, segmentation_inference, {("", "receivers")})
-        self.add_flow(segmentation_inference, segmentation_postprocessor, {("transmitter", "")})
+        self.add_flow(segmentation_inference, info_op, {("transmitter", "in")})
+        self.add_flow(info_op, segmentation_postprocessor, {("out", "")})
+        #self.add_flow(segmentation_inference, segmentation_postprocessor, {("transmitter", "")})
         self.add_flow(
             segmentation_postprocessor,
             segmentation_visualizer,
