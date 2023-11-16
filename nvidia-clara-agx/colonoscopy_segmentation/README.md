@@ -49,9 +49,7 @@ python colonoscopy_segmentation.py --data /workspace/holohub/data/colonoscopy_se
 ```
 
 
-
-
-* log
+* Terminal log
 ```
 
 root@cagx-ucl:/workspace/holohub# ./run launch colonoscopy_segmentation       
@@ -191,8 +189,38 @@ NOTE: This could take a couple of minutes depending on your model size and GPU!
 [info] [gxf_executor.cpp:229] Destroying context
 
 ```
+## Screenshots of `colonoscopy_segmentation.py`
+* Using `colon.onnx` with replayer:baseline `out602x528-selected-ck2bxknhjvs1x0794iogrq49k-05-frames` 
+![fig](Screenshot%20from%202023-11-15%2008-31-11.png)
+inference_output_tensor for one frame
+```
+tensor.min()=-11.6~
+tensor.max()=10.7~
+tensor.mean()=-5.2~
+tensor.shape()=(1,1,512,512)
+```
 
-## Optmise model
+* Using `ColonSegNet-07112023-2359.onnx` with replayer:baseline `out602x528-selected-ck2bxknhjvs1x0794iogrq49k-05-frames`
+![fig](Screenshot%20from%202023-11-15%2008-23-30.png)
+inference_output_tensor for one frame
+```
+tensor.min()=-12.3~
+tensor.max()=2.2~
+tensor.mean()=-6.0~
+tensor.shape()=(1,1,512,512)
+```
+
+* Using `colon.onnx` with replayer:baseline `out512x448-selected-ck2bxknhjvs1x0794iogrq49k-05-frames`
+![fig](Screenshot%20from%202023-11-15%2008-35-29.png)
+inference_output_tensor for one frame
+```
+tensor.min()=-10.6~
+tensor.max()=2.2~
+tensor.mean()=-6.7~
+tensor.shape()=(1,1,512,512)
+```
+
+## Optmisation of model
 
 ```
 [info] [core.cpp:46] TRT Inference: converting ONNX model at /workspace/holohub/data/colonoscopy_segmentation/colon.onnx
